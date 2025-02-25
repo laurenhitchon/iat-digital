@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import './index.css'
 import App from './App.tsx'
 import CoursesLayout from './layouts/CoursesLayout.tsx'
-import Course from './courses/Course.tsx'
+import Course from './course/Course.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
