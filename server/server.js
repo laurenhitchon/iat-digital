@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import Course from './models/Course.js';
 
 dotenv.config();
@@ -9,6 +10,7 @@ const uri = process.env.ATLAS_URI || "";
 
 const app = express();
 
+app.use(cors());
 // Middleware to parse JSON bodies
 app.use(express.json());
 

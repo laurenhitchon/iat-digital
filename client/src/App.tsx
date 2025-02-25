@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router'
 
 import { Clock } from 'lucide-react'
@@ -6,7 +6,7 @@ import { Button } from './components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from './components/ui/card'
 import placeholderImg from './assets/placeholder.svg'
 
-const courses = [
+/* const courses = [
   {
     id: 1,
     slug: "web-development-fundamentals",
@@ -107,9 +107,26 @@ const courses = [
     category: "Marketing",
     image: "/placeholder.svg?height=200&width=400",
   },
-]
+] */
 
 function App() {
+  const [courses, setCourses] = useState([]);
+  useEffect(() => {
+    async function getCourses() {
+      const response = await fetch(`http://localhost:5050/courses/`);
+      if (!response.ok) {
+        const message = `An error occurred: ${response.statusText}`;
+        console.error(message);
+        return;
+      }
+      const records = await response.json();
+      setCourses(records);
+    }
+    getCourses();
+    return;
+  }, [courses.length]);
+
+  console.log(courses);
 
   return (
     <>
