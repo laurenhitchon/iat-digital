@@ -98,5 +98,25 @@
     "instructor": "Kate Brown",
     "category": "Marketing",
     "image": "/placeholder.svg?height=200&width=400"
+  },
+  {
+    "id": 11,
+    "slug": "web-development-fundamentals",
+    "title": "Web Development Fundamentals",
+    "description": "Learn the core concepts of web development, including HTML, CSS, and JavaScript. Perfect for beginners starting their coding journey.",
+    "hours": 20,
+    "instructor": "Bob Smith",
+    "category": "Web Development",
+    "image": "/placeholder.svg?height=200&width=400"
+  },
+  {
+    "id": 12,
+    "slug": "react-masterclass",
+    "title": "React Masterclass",
+    "description": "Master React.js with hands-on projects and learn state management, hooks, and modern React patterns.",
+    "hours": 30,
+    "instructor": "Alice Johnson",
+    "category": "Web Development",
+    "image": "/placeholder.svg?height=200&width=400"
   }
 ]
