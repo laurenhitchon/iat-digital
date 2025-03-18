@@ -1,0 +1,525 @@
+[{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95c3"
+  },
+  "id": 1,
+  "slug": "web-development-fundamentals",
+  "title": "Web Development Fundamentals",
+  "description": "Learn the core concepts of web development, including HTML, CSS, and JavaScript. Perfect for beginners starting their coding journey.",
+  "longDescription": "This comprehensive course will take you from a complete beginner to being confident with the core technologies of web development. You'll learn how to structure web pages with HTML, style them with CSS, and add interactivity with JavaScript. Through hands-on projects and real-world examples, you'll gain practical experience that you can immediately apply to your own projects.",
+  "hours": 20,
+  "instructor": "Bob Smith",
+  "category": "Web Development",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "Introduction to HTML",
+      "lessons": [
+        "HTML Document Structure",
+        "Working with Text",
+        "Links and Images",
+        "Forms and Input Elements"
+      ]
+    },
+    {
+      "title": "CSS Fundamentals",
+      "lessons": [
+        "CSS Selectors",
+        "Box Model",
+        "Layout Techniques",
+        "Responsive Design"
+      ]
+    },
+    {
+      "title": "JavaScript Basics",
+      "lessons": [
+        "Variables and Data Types",
+        "Control Flow",
+        "Functions",
+        "DOM Manipulation"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95c4"
+  },
+  "id": 2,
+  "slug": "react-masterclass",
+  "title": "React Masterclass",
+  "description": "Master React.js with hands-on projects and learn state management, hooks, and modern React patterns.",
+  "longDescription": "In this advanced course, you'll dive deep into React.js and learn how to build scalable and performant web applications. You'll master state management, hooks, and modern React patterns that will take your skills to the next level. By the end of the course, you'll have a solid understanding of React.js and be able to build complex applications with confidence.",
+  "hours": 30,
+  "instructor": "Alice Johnson",
+  "category": "Web Development",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "React Fundamentals",
+      "lessons": [
+        "Introduction to React",
+        "Components and Props",
+        "State and Lifecycle",
+        "Handling Events"
+      ]
+    },
+    {
+      "title": "Advanced React",
+      "lessons": [
+        "Hooks",
+        "Context API",
+        "Error Boundaries",
+        "Performance Optimization"
+      ]
+    },
+    {
+      "title": "React Router",
+      "lessons": [
+        "Basic Routing",
+        "Nested Routes",
+        "Route Parameters",
+        "Programmatic Navigation"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95c5"
+  },
+  "id": 3,
+  "slug": "full-stack-development",
+  "title": "Full Stack Development",
+  "description": "Become a full-stack developer by learning both frontend and backend technologies, databases, and deployment.",
+  "longDescription": "This comprehensive course will teach you everything you need to know to become a full-stack developer. You'll learn frontend technologies like HTML, CSS, and JavaScript, backend technologies like Node.js and Express, databases like MongoDB, and deployment with Heroku. By the end of the course, you'll have the skills to build and deploy full-stack applications from scratch.",
+  "hours": 45,
+  "instructor": "Charlie Brown",
+  "category": "Web Development",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "Frontend Development",
+      "lessons": [
+        "HTML and CSS Basics",
+        "JavaScript Fundamentals",
+        "Responsive Design",
+        "Web Performance Optimization"
+      ]
+    },
+    {
+      "title": "Backend Development",
+      "lessons": [
+        "Node.js Basics",
+        "Express Framework",
+        "RESTful APIs",
+        "Authentication and Authorization"
+      ]
+    },
+    {
+      "title": "Database Management",
+      "lessons": [
+        "MongoDB Basics",
+        "Mongoose ODM",
+        "Data Modeling",
+        "Querying and Aggregation"
+      ]
+    },
+    {
+      "title": "Deployment and DevOps",
+      "lessons": [
+        "Version Control with Git",
+        "Continuous Integration",
+        "Containerization",
+        "Cloud Deployment"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95c6"
+  },
+  "id": 4,
+  "slug": "python-for-data-science",
+  "title": "Python for Data Science",
+  "description": "Learn Python programming and data science libraries such as NumPy, Pandas, and Matplotlib for data analysis and visualization.",
+  "longDescription": "This course will teach you the fundamentals of Python programming and data science libraries such as NumPy, Pandas, and Matplotlib. You'll learn how to analyze and visualize data, perform statistical analysis, and create data-driven reports. By the end of the course, you'll have the skills to work with real-world data and make data-driven decisions.",
+  "hours": 25,
+  "instructor": "Eve Wilson",
+  "category": "Data Science",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "Python Basics",
+      "lessons": [
+        "Variables and Data Types",
+        "Control Flow",
+        "Functions",
+        "File I/O"
+      ]
+    },
+    {
+      "title": "Data Analysis with Pandas",
+      "lessons": [
+        "DataFrames and Series",
+        "Data Cleaning",
+        "Data Transformation",
+        "Grouping and Aggregation"
+      ]
+    },
+    {
+      "title": "Data Visualization with Matplotlib",
+      "lessons": [
+        "Basic Plots",
+        "Statistical Plots",
+        "Customizing Plots",
+        "Interactive Plots"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95c7"
+  },
+  "id": 5,
+  "slug": "machine-learning-101",
+  "title": "Machine Learning 101",
+  "description": "Get started with machine learning by learning the basics of supervised and unsupervised learning, regression, and classification.",
+  "longDescription": "In this introductory course, you'll learn the basics of machine learning and how to apply it to real-world problems. You'll explore supervised and unsupervised learning, regression, and classification, and learn how to evaluate and improve machine learning models. By the end of the course, you'll have a solid foundation in machine learning and be able to build and deploy your own models.",
+  "hours": 35,
+  "instructor": "Frank Miller",
+  "category": "Data Science",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "Introduction to Machine Learning",
+      "lessons": [
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Regression",
+        "Classification"
+      ]
+    },
+    {
+      "title": "Model Evaluation and Improvement",
+      "lessons": [
+        "Cross-Validation",
+        "Hyperparameter Tuning",
+        "Model Selection",
+        "Model Deployment"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95c8"
+  },
+  "id": 6,
+  "slug": "deep-learning-foundations",
+  "title": "Deep Learning Foundations",
+  "description": "Dive deep into neural networks, convolutional neural networks, and recurrent neural networks for deep learning applications.",
+  "longDescription": "In this advanced course, you'll dive deep into deep learning and neural networks. You'll learn about convolutional neural networks, recurrent neural networks, and advanced deep learning techniques that are used in real-world applications. By the end of the course, you'll have a solid understanding of deep learning and be able to build and deploy your own deep learning models.",
+  "hours": 40,
+  "instructor": "Grace Davis",
+  "category": "Data Science",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "Neural Networks",
+      "lessons": [
+        "Perceptrons",
+        "Activation Functions",
+        "Backpropagation",
+        "Optimization Algorithms"
+      ]
+    },
+    {
+      "title": "Convolutional Neural Networks",
+      "lessons": [
+        "Image Classification",
+        "Object Detection",
+        "Image Segmentation",
+        "Transfer Learning"
+      ]
+    },
+    {
+      "title": "Recurrent Neural Networks",
+      "lessons": [
+        "Sequence Prediction",
+        "Text Generation",
+        "Sentiment Analysis",
+        "Language Translation"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95c9"
+  },
+  "id": 7,
+  "slug": "ui-ux-design",
+  "title": "UI/UX Design",
+  "description": "Learn the principles of user interface and user experience design, wireframing, prototyping, and usability testing.",
+  "longDescription": "This course will teach you the principles of user interface and user experience design, and how to create wireframes, prototypes, and conduct usability testing. You'll learn how to design user-friendly interfaces that meet user needs and business goals. By the end of the course, you'll have the skills to create engaging and intuitive user experiences.",
+  "hours": 15,
+  "instructor": "Henry Lee",
+  "category": "Design",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "UI Design Principles",
+      "lessons": [
+        "Color Theory",
+        "Typography",
+        "Layout Design",
+        "Responsive Design"
+      ]
+    },
+    {
+      "title": "UX Design Process",
+      "lessons": [
+        "User Research",
+        "Information Architecture",
+        "Wireframing",
+        "Prototyping"
+      ]
+    },
+    {
+      "title": "Usability Testing",
+      "lessons": [
+        "Usability Heuristics",
+        "User Testing Methods",
+        "Feedback Analysis",
+        "Iterative Design"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95ca"
+  },
+  "id": 8,
+  "slug": "graphic-design-101",
+  "title": "Graphic Design 101",
+  "description": "Master graphic design tools such as Adobe Photoshop, Illustrator, and InDesign, and learn design principles and typography.",
+  "longDescription": "In this comprehensive course, you'll master graphic design tools such as Adobe Photoshop, Illustrator, and InDesign. You'll learn design principles, typography, color theory, and how to create stunning visual designs. By the end of the course, you'll have the skills to create professional-quality designs for print and digital media.",
+  "hours": 20,
+  "instructor": "Ivy Clark",
+  "category": "Design",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "Design Principles",
+      "lessons": [
+        "Visual Hierarchy",
+        "Grid Systems",
+        "Color Theory",
+        "Typography"
+      ]
+    },
+    {
+      "title": "Adobe Photoshop",
+      "lessons": [
+        "Image Editing",
+        "Photo Retouching",
+        "Digital Painting",
+        "Photo Manipulation"
+      ]
+    },
+    {
+      "title": "Adobe Illustrator",
+      "lessons": [
+        "Vector Graphics",
+        "Illustration Techniques",
+        "Logo Design",
+        "Icon Design"
+      ]
+    },
+    {
+      "title": "Adobe InDesign",
+      "lessons": [
+        "Layout Design",
+        "Print Design",
+        "Interactive PDFs",
+        "eBooks"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95cb"
+  },
+  "id": 9,
+  "slug": "digital-marketing-fundamentals",
+  "title": "Digital Marketing Fundamentals",
+  "description": "Learn the core concepts of digital marketing, including SEO, SEM, social media marketing, and email marketing.",
+  "longDescription": "This course will teach you the core concepts of digital marketing, including search engine optimization (SEO), search engine marketing (SEM), social media marketing, and email marketing. You'll learn how to create and execute digital marketing campaigns that drive traffic, generate leads, and increase sales. By the end of the course, you'll have the skills to launch your own digital marketing campaigns.",
+  "hours": 10,
+  "instructor": "Jack White",
+  "category": "Marketing",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "SEO and SEM",
+      "lessons": [
+        "Keyword Research",
+        "On-Page Optimization",
+        "Off-Page Optimization",
+        "Paid Search Advertising"
+      ]
+    },
+    {
+      "title": "Social Media Marketing",
+      "lessons": [
+        "Social Media Platforms",
+        "Content Strategy",
+        "Engagement Metrics",
+        "Social Media Advertising"
+      ]
+    },
+    {
+      "title": "Email Marketing",
+      "lessons": [
+        "Email Campaigns",
+        "List Building",
+        "Segmentation",
+        "Automation"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95cc"
+  },
+  "id": 10,
+  "slug": "content-marketing-strategy",
+  "title": "Content Marketing Strategy",
+  "description": "Develop a content marketing strategy, create engaging content, and learn how to measure content performance.",
+  "longDescription": "In this course, you'll learn how to develop a content marketing strategy, create engaging content, and measure content performance. You'll explore different types of content, content distribution channels, and content marketing metrics. By the end of the course, you'll have the skills to create and execute a successful content marketing strategy.",
+  "hours": 15,
+  "instructor": "Kate Brown",
+  "category": "Marketing",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "Content Marketing Strategy",
+      "lessons": [
+        "Content Planning",
+        "Audience Research",
+        "Content Calendar",
+        "Content Promotion"
+      ]
+    },
+    {
+      "title": "Content Creation",
+      "lessons": [
+        "Copywriting",
+        "Visual Content",
+        "Video Content",
+        "Interactive Content"
+      ]
+    },
+    {
+      "title": "Content Performance",
+      "lessons": [
+        "Content Metrics",
+        "Google Analytics",
+        "Social Media Analytics",
+        "Content Optimization"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95cd"
+  },
+  "id": 11,
+  "slug": "web-development-fundamentals",
+  "title": "Web Development Fundamentals",
+  "description": "Learn the core concepts of web development, including HTML, CSS, and JavaScript. Perfect for beginners starting their coding journey.",
+  "longDescription": "This comprehensive course will take you from a complete beginner to being confident with the core technologies of web development. You'll learn how to structure web pages with HTML, style them with CSS, and add interactivity with JavaScript. Through hands-on projects and real-world examples, you'll gain practical experience that you can immediately apply to your own projects.",
+  "hours": 20,
+  "instructor": "Bob Smith",
+  "category": "Web Development",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "Introduction to HTML",
+      "lessons": [
+        "HTML Document Structure",
+        "Working with Text",
+        "Links and Images",
+        "Forms and Input Elements"
+      ]
+    },
+    {
+      "title": "CSS Fundamentals",
+      "lessons": [
+        "CSS Selectors",
+        "Box Model",
+        "Layout Techniques",
+        "Responsive Design"
+      ]
+    },
+    {
+      "title": "JavaScript Basics",
+      "lessons": [
+        "Variables and Data Types",
+        "Control Flow",
+        "Functions",
+        "DOM Manipulation"
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "67d8cdf2abc9439f0f6d95ce"
+  },
+  "id": 12,
+  "slug": "react-masterclass",
+  "title": "React Masterclass",
+  "description": "Master React.js with hands-on projects and learn state management, hooks, and modern React patterns.",
+  "longDescription": "In this advanced course, you'll dive deep into React.js and learn how to build scalable and performant web applications. You'll master state management, hooks, and modern React patterns that will take your skills to the next level. By the end of the course, you'll have a solid understanding of React.js and be able to build complex applications with confidence.",
+  "hours": 30,
+  "instructor": "Alice Johnson",
+  "category": "Web Development",
+  "image": "/placeholder.svg?height=200&width=400",
+  "modules": [
+    {
+      "title": "React Fundamentals",
+      "lessons": [
+        "Introduction to React",
+        "Components and Props",
+        "State and Lifecycle",
+        "Handling Events"
+      ]
+    },
+    {
+      "title": "Advanced React",
+      "lessons": [
+        "Hooks",
+        "Context API",
+        "Error Boundaries",
+        "Performance Optimization"
+      ]
+    },
+    {
+      "title": "React Router",
+      "lessons": [
+        "Basic Routing",
+        "Nested Routes",
+        "Route Parameters",
+        "Programmatic Navigation"
+      ]
+    }
+  ]
+}]
