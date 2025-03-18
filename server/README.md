@@ -141,7 +141,7 @@ async function seedDatabase() {
     await client.connect();
     const database = client.db('iatdigital');
     const coursesCollection = database.collection('courses');
-    
+
     // Clear existing data
     await coursesCollection.deleteMany({});
     
@@ -175,7 +175,7 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
-    
+
     console.log(`MongoDB Connected: ${conn.connection.host}`);
     return conn;
   } catch (error) {
@@ -278,10 +278,10 @@ For local development with automatic server restarts:
    \`\`\`bash
    npm run dev
    \`\`\`
-   
+
    This will start the server using nodemon, which automatically restarts when files change.
 
-4. The server will be available at http://localhost:5050 (or the port specified in your .env file).
+4. The server will be available at <http://localhost:5050> (or the port specified in your .env file).
 
 ### Production Mode with PM2
 
@@ -303,7 +303,7 @@ For running multiple instances with PM2:
    \`\`\`bash
    npm run pm2:start
    \`\`\`
-   
+
    This will start 4 instances of the application on ports 3001-3004 as defined in the `ecosystem.config.js` file.
 
 5. Verify the instances are running:
@@ -329,15 +329,19 @@ For a complete production setup with load balancing:
 
 2. Install Nginx if not already installed:
    \`\`\`bash
+
    # For Ubuntu/Debian
+
    sudo apt update
    sudo apt install nginx
-   
+
    # For CentOS/RHEL
+
    sudo yum install epel-release
    sudo yum install nginx
-   
+
    # For macOS
+
    brew install nginx
    \`\`\`
 
@@ -354,16 +358,18 @@ For a complete production setup with load balancing:
 5. Restart Nginx to apply the configuration:
    \`\`\`bash
    sudo systemctl restart nginx
+
    # or on macOS
+
    brew services restart nginx
    \`\`\`
 
 6. For local testing, add the following to your hosts file (replace "your-domain.com" with your actual domain or a local testing domain):
    \`\`\`
-   127.0.0.1 your-domain.com www.your-domain.com
+   127.0.0.1 your-domain.com <www.your-domain.com>
    \`\`\`
 
-7. Access the application at http://your-domain.com or simply use http://localhost:80
+7. Access the application at <http://your-domain.com> or simply use <http://localhost:80>
 
 ## API Endpoints
 
@@ -411,7 +417,7 @@ Retrieves a list of all courses.
 
 **Example:**
 \`\`\`bash
-curl http://localhost:5050/courses
+curl <http://localhost:5050/courses>
 \`\`\`
 
 #### GET /courses/:id
@@ -419,6 +425,7 @@ curl http://localhost:5050/courses
 Retrieves a specific course by ID.
 
 **Parameters:**
+
 - `id`: The ID of the course to retrieve
 
 **Response Format:**
@@ -437,7 +444,7 @@ Retrieves a specific course by ID.
 
 **Example:**
 \`\`\`bash
-curl http://localhost:5050/courses/1
+curl <http://localhost:5050/courses/1>
 \`\`\`
 
 #### POST /courses
@@ -474,7 +481,7 @@ Creates a new course.
 
 **Example:**
 \`\`\`bash
-curl -X POST http://localhost:5050/courses \
+curl -X POST <http://localhost:5050/courses> \
   -H "Content-Type: application/json" \
   -d '{
     "id": 11,
@@ -493,6 +500,7 @@ curl -X POST http://localhost:5050/courses \
 Updates an existing course.
 
 **Parameters:**
+
 - `id`: The ID of the course to update
 
 **Request Body:**
@@ -524,7 +532,7 @@ Updates an existing course.
 
 **Example:**
 \`\`\`bash
-curl -X PUT http://localhost:5050/courses/11 \
+curl -X PUT <http://localhost:5050/courses/11> \
   -H "Content-Type: application/json" \
   -d '{
     "slug": "updated-course",
@@ -542,6 +550,7 @@ curl -X PUT http://localhost:5050/courses/11 \
 Deletes a course.
 
 **Parameters:**
+
 - `id`: The ID of the course to delete
 
 **Response Format:**
@@ -553,7 +562,7 @@ Deletes a course.
 
 **Example:**
 \`\`\`bash
-curl -X DELETE http://localhost:5050/courses/11
+curl -X DELETE <http://localhost:5050/courses/11>
 \`\`\`
 
 #### GET /server-info
@@ -576,7 +585,7 @@ Retrieves information about the server instance.
 
 **Example:**
 \`\`\`bash
-curl http://localhost:5050/server-info
+curl <http://localhost:5050/server-info>
 \`\`\`
 
 #### POST /admin/cache/clear
@@ -600,11 +609,14 @@ Clears the cache. Optionally accepts a pattern to clear specific cache entries.
 
 **Example:**
 \`\`\`bash
+
 # Clear all cache
-curl -X POST http://localhost:5050/admin/cache/clear
+
+curl -X POST <http://localhost:5050/admin/cache/clear>
 
 # Clear specific cache entries
-curl -X POST http://localhost:5050/admin/cache/clear \
+
+curl -X POST <http://localhost:5050/admin/cache/clear> \
   -H "Content-Type: application/json" \
   -d '{"pattern":"/courses"}'
 \`\`\`

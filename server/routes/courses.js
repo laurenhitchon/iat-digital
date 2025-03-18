@@ -1,6 +1,6 @@
 // routes/courses.js
 import express from "express"
-import Course from "../models/Course.js"
+import Course from "../models/course.js"
 import { cacheMiddleware, clearCache } from "../utils/cache.js"
 
 const router = express.Router()
@@ -8,8 +8,12 @@ const router = express.Router()
 // Get a list of all courses with caching (TTL: 5 minutes)
 router.get("/", cacheMiddleware(300), async (req, res) => {
   try {
-    const courses = await Course.find()
-    res.json(courses)
+    const courses = await Course.find().lean() // Convert to plain JS objects
+    const formattedCourses = courses.map(course => ({
+      ...course,
+      _id: course._id.toString() // Convert _id to string
+    }))
+    res.json(formattedCourses)
   } catch (err) {
     res.status(500).json({ error: err.message })
   }
@@ -18,11 +22,11 @@ router.get("/", cacheMiddleware(300), async (req, res) => {
 // Get a single course by id with caching (TTL: 10 minutes)
 router.get("/:id", cacheMiddleware(600), async (req, res) => {
   try {
-    const course = await Course.findById(req.params.id)
+    const course = await Course.findById(req.params.id).lean()
     if (!course) {
       return res.status(404).json({ error: "Course not found" })
     }
-    res.json(course)
+    res.json({ ...course, _id: course._id.toString() }) // Ensure _id is a string
   } catch (err) {
     res.status(500).json({ error: err.message })
   }
@@ -35,10 +39,9 @@ router.post("/", async (req, res) => {
     const course = new Course({ id, slug, title, description, hours, instructor, category, image })
     await course.save()
 
-    // Clear courses cache when a new course is added
     clearCache("/courses")
 
-    res.status(201).json(course)
+    res.status(201).json({ ...course.toObject(), _id: course._id.toString() }) // Convert _id to string
   } catch (err) {
     res.status(500).json({ error: err.message })
   }
@@ -51,17 +54,17 @@ router.put("/:id", async (req, res) => {
     const course = await Course.findByIdAndUpdate(
       req.params.id,
       { id, slug, title, description, hours, instructor, category, image },
-      { new: true, runValidators: true },
-    )
+      { new: true, runValidators: true }
+    ).lean()
+
     if (!course) {
       return res.status(404).json({ error: "Course not found" })
     }
 
-    // Clear specific course cache and courses list cache
     clearCache(`/courses/${req.params.id}`)
     clearCache("/courses")
 
-    res.json(course)
+    res.json({ ...course, _id: course._id.toString() })
   } catch (err) {
     res.status(500).json({ error: err.message })
   }
@@ -70,16 +73,15 @@ router.put("/:id", async (req, res) => {
 // Delete a course by id.
 router.delete("/:id", async (req, res) => {
   try {
-    const course = await Course.findByIdAndDelete(req.params.id)
+    const course = await Course.findByIdAndDelete(req.params.id).lean()
     if (!course) {
       return res.status(404).json({ error: "Course not found" })
     }
 
-    // Clear specific course cache and courses list cache
     clearCache(`/courses/${req.params.id}`)
     clearCache("/courses")
 
-    res.json({ message: "Course deleted successfully" })
+    res.json({ message: "Course deleted successfully", deletedCourseId: course._id.toString() })
   } catch (err) {
     res.status(500).json({ error: err.message })
   }
